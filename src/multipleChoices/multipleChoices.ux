@@ -44,14 +44,9 @@
 
                 "buttonLinkArray": [{
                     "buttonText": "View more"
-                },
-                    /*{
-                        "buttonText": "Go to App"
-                    }*/
+                }
                 ]
-            },
-            upImgUrl: URL.upUrl,
-            offImgUrl: URL.offUrl
+            }
         },
         onInit: function () {
             this.$on('menu-click', this.menuClick);
@@ -88,8 +83,6 @@
                     this.viewMore = !this.viewMore
                     this.disPlayContent.buttonLinkArray[0].buttonText = this.viewMore ? "View less" : "View more";
                     this.viewCurrencyData = this.viewMore ? this.currencyData : this.currencyData.slice(0, 3);
-                    break;
-                case 1:
                     break;
                 default:
                     break;
