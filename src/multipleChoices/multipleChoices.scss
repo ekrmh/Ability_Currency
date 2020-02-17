@@ -1,0 +1,47 @@
+@import '../common/css/basic.scss';
+.contentBox{
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_item{
+  justify-content: space-between;
+  padding: dpConvert(8) 0px;
+  border-bottom: 1px solid rgba(#000000,0.2);
+}
+.content_left{
+  width: 33%;
+  flex-direction: column;
+}
+.stockName{
+  font-size: dpConvert(16);
+  color: rgba(#000000, 0.9);
+  font-weight:500;
+  margin-bottom: dpConvert(2);
+}
+.stockNumber{
+  font-size: dpConvert(12);
+  color: rgba(#000000, 0.6);
+  font-weight:400;
+}
+.content_right{
+  flex: 1;
+  justify-content: space-around;
+}
+.content_right text{
+  text-align: right;
+}
+.info1{
+  font-size: dpConvert(14);
+  color: rgba(#000000, 0.9);
+  font-weight:500;
+}
+.info2-red{
+  font-size: dpConvert(14);
+  color: #FA2A2D;
+  font-weight:500;
+}
+.info2-green{
+  font-size: dpConvert(14);
+  color: #41BA41;
+  font-weight:500;
+}

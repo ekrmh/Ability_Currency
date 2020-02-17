@@ -1,0 +1,64 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug QuickApp on Device",
+      "type": "quickapp",
+      "request": "launch",
+      "device": "${command:quickapp.choose-device}",
+      "cwd": "${workspaceRoot}",
+      "logLevel": "log",
+      "adbPort": 5037,
+      "debugServerPort": 8088,
+      "remoteDebug": true,
+      "elementMode": false
+    },
+    {
+      "name": "Debug Widget marketIndex on Device",
+      "type": "quickapp",
+      "request": "launch",
+      "device": "${command:quickapp.choose-device}",
+      "cwd": "${workspaceRoot}",
+      "logLevel": "log",
+      "adbPort": 5037,
+      "debugServerPort": 8088,
+      "remoteDebug": true,
+      "elementMode": false,
+      "widgetUri": "marketIndex",
+      "widgetParams": "{}",
+      "widgetMaxWidth": 750
+    },
+    {
+      "name": "Debug Widget singleChoice on Device",
+      "type": "quickapp",
+      "request": "launch",
+      "device": "${command:quickapp.choose-device}",
+      "cwd": "${workspaceRoot}",
+      "logLevel": "log",
+      "adbPort": 5037,
+      "debugServerPort": 8088,
+      "remoteDebug": true,
+      "elementMode": false,
+      "widgetUri": "singleChoice",
+      "widgetParams": "{}"
+    },
+    {
+      "name": "Debug Widget multipleChoices on Device",
+      "type": "quickapp",
+      "request": "launch",
+      "device": "${command:quickapp.choose-device}",
+      "cwd": "${workspaceRoot}",
+      "logLevel": "log",
+      "adbPort": 5037,
+      "debugServerPort": 8088,
+      "remoteDebug": true,
+      "elementMode": false,
+      "widgetUri": "multipleChoices",
+      "widgetParams": "{}",
+      "isRun": false,
+      "autoRun": false
+    }
+  ],
+  "currentWidgetUri": "multipleChoices",
+  "lastWidgetUri": "null"
+}

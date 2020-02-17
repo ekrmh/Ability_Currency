@@ -1,0 +1,33 @@
+@import "./basic.scss";
+
+.small-hw-font-12{
+  font-size: dpConvert(12 , 0.85);
+}
+.normal-hw-font-12{
+  font-size: dpConvert(12, 1);
+}
+.large-hw-font-12{
+  font-size: dpConvert(12, 1.15);
+}
+.super-large-hw-font-12{
+  font-size: dpConvert(12, 1.3);
+}
+.extra-large-hw-font-12{
+  font-size: dpConvert(48, 1.45);
+}
+
+.small-hw-font-14{
+  font-size: dpConvert(14 , 0.85);
+}
+.normal-hw-font-14{
+  font-size: dpConvert(14, 1);
+}
+.large-hw-font-14{
+  font-size: dpConvert(14, 1.15);
+}
+.super-large-hw-font-14{
+  font-size: dpConvert(14, 1.3);
+}
+.extra-large-hw-font-12{
+  font-size: dpConvert(14, 1.45);
+}

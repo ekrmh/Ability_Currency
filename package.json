@@ -1,0 +1,12 @@
+{
+  "name": "com.abilitycurrency.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "fa-build": "webpack --config ./node_modules/fa-toolkit/webpack.config.js",
+    "fa-watch": "webpack --watch --config ./node_modules/fa-toolkit/webpack.config.js"
+  },
+  "devDependencies": {
+    "fa-toolkit": "file:fa-toolkit-2.1.0-Stable.300.tgz"
+  }
+}

@@ -1,0 +1,29 @@
+.text-color-primary {
+  color: rgba(#000000, 0.9);
+}
+
+.text-color-secondary {
+  color: rgba(#000000, 0.6);
+}
+
+.text-color-tertiary {
+  color: rgba(#000000, 0.38);
+}
+
+$baseWidth: 750;
+$resolution: 1080;
+$screenDensity: 3;
+
+@function dpConvert($dpValue, $scale: 1) {
+  @return ($dpValue * $scale * ($baseWidth/($resolution/$screenDensity))) * 1px;
+}
+
+@mixin size($width, $height) {
+  width: dpConvert($width);
+  height: dpConvert($height);
+}
+
+@mixin size-100 {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,38 @@
+<template>
+  
+  <div class="card_box">
+  
+    <div class="title_box">
+      <image class="title_logo" src="{{titleMsg.logoUrl}}"></image>
+      <text class="title">{{titleMsg.name}}</text>
+      <input type="button" value="↻" class="refresh" onclick="refreshClick()"/>
+    </div>
+    <slot></slot>
+    <div class="button_box">
+      <block for="menuMsg">
+          <text class="menu" onclick="menuClick($idx)">{{menuMsg[$idx].buttonText}}</text>
+      </block>
+    </div>
+   
+  </div>
+
+</template>
+
+<style lang="sass">
+	@import "./card_box.scss";
+</style>
+
+<script>
+  module.exports = {
+    props: [
+      'titleMsg', 'menuMsg'
+    ],
+    menuClick: function(idx) {
+      this.$dispatch('menu-click',{'idx':idx});
+    },
+    refreshClick: function() {
+      console.log("refresh clicked");
+      this.$dispatch('refresh-click', {});
+    }
+  }
+</script>

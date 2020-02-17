@@ -1,0 +1,43 @@
+@import '../../css/basic.scss';
+
+.card_box{
+  flex-direction: column;
+  padding-left: dpConvert(16);
+  padding-right: dpConvert(16);
+}
+
+.title_box{
+  height: dpConvert(48);
+  align-items: center;
+}
+
+.title_logo{
+  @include size(16,16);
+  border-radius: dpConvert(4);
+}
+
+.title{
+  margin-left: dpConvert(8);
+  color: rgba(#000000, 0.9);
+  font-size: dpConvert(12);
+}
+
+.refresh{
+  position: absolute;
+  right: dpConvert(8); 
+  background-color: #ffffff;
+  color: rgba(#000000, 0.9);
+}
+
+.button_box{
+  height: dpConvert(48);
+  align-content: center;
+  align-items: center;
+}
+
+.menu{
+  margin-right: dpConvert(24);
+  color: #007dff;
+  font-weight: 500;
+  font-size: dpConvert(14);
+}
